@@ -1,0 +1,128 @@
+/* Reset */
+@import url("reset.css");
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+/* Styles */
+body{
+	font-family: "Poppins", sans-serif;
+	color: #6C757D;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
+/* container */
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.article {
+	padding: 80px 0 40px;
+}
+
+.article__text-block {
+	max-width: 816px;
+	margin: 0 auto 80px;
+}
+.article__text-block p{
+	line-height: 1.78;
+	margin-bottom: 30px;
+}
+.title {
+	color: #212529;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	margin-bottom: 40px;
+	max-width: 605px;
+}
+.article__image {
+	max-width: 100%;
+	margin-bottom: 80px;
+	border-radius: 5px;
+}
+
+.images {
+	margin-bottom: 80px;
+	font-size: 0;
+}
+.image {
+	max-width: 100%;
+	border-radius: 5px;
+}
+.image_1 {
+	margin-right: 30px;
+}
+.article__text-block_bottom,
+.article__text-block_bottom p{
+	margin-bottom: 0;
+}
+
+.article-second {
+	padding: 40px 0 80px;
+}
+
+.article-second__image {
+	width: 100%;
+	max-height: 500px;
+	margin-bottom: 100px;
+}
+.article-second__text-block{
+	margin-bottom: 100px;
+}
+p.last-paragraph {
+	margin-bottom: 100px;
+}
+.article-second__images {
+	margin-bottom: 30px;
+	font-size: 0;
+}
+.dots {
+	max-width: 54px;
+	margin: 0 auto 64px;
+	font-size: 0;
+}
+.dots__dot {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #C4C4C4;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.dots__dot_active {
+	background-color: #212529;
+}
+.dots__dot_last{
+	margin-right: 0;
+}
+
+/* practice */
+.practice__text{
+	margin-bottom: 50px;
+	box-shadow: 0px 0px 45px 0px coral, inset 0px 0px 15px 0px coral;
+}
+
+.img__block{
+	font-size: 0;
+	opacity: 0.5;
+	outline: 5px solid blue;
+	border: 10px dotted rgb(0, 255, 34);
+}
+
+.img__block img {
+	outline: 5px solid yellow;
+	border: 1px dotted red;
+	border-radius: 5px;
+}
+.practice-image{
+	margin-right: 6px;
+}
+.hidden-image{
+	visibility: hidden;
+}
