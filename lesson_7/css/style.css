@@ -44,8 +44,7 @@
 /* Main (TailGrids-Example Templates - Homepage) */
 .tailgrids{
 	padding: 145px 0;
-	background: url("../img/tailgrids/example_templates/1.png") 69.69%  no-repeat, #F4F7FF
-	linear-gradient(115deg, rgba(48,86,211,0) 60.63%, rgba(48,86,211,0.0844712885154062) 60.63%, rgba(48,86,211,0) 65.63%, rgba(48,86,211,0.0844712885154062) 65%);
+	background: url("../img/tailgrids/example_templates/1.png") 69.69%  no-repeat, linear-gradient(115deg, rgba(0,0,0,0) 65%, rgba(48,86,211,0.0844712885154062) 65%, rgba(48,86,211,0) 99%), linear-gradient(115deg, rgba(0,0,0,0) 61%, rgba(48,86,211,0.0844712885154062) 61%, rgba(48,86,211,0) 99%), #F4F7FF;
 }
 .tailgrids__container {
 	margin: 0 auto;
