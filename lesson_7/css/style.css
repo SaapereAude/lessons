@@ -29,6 +29,9 @@
 .header__content span {
 	margin-bottom: 15px;
 	display: inline-block;
+	max-width: 150px;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .header__content p{
 	max-width: 355px;
@@ -64,6 +67,9 @@
 	font-size: 18px;
 	line-height: 1.33; /* 24/18 */
 	color: #3056D3;
+	max-width: 300px;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .tailgrids__content h2{
 	margin-bottom: 15px;
