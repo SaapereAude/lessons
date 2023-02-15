@@ -134,7 +134,7 @@ ul li{
 .list-1 li{
 	background: url("../img/tailgrids/core_components/list_1.svg") 0 4px no-repeat;
 	padding-left: 20px;
-	min-height: 8px;
+	min-height: 14px;
 }
 .list-2 li{
 	background: url("../img/tailgrids/core_components/list_2.svg") 0 0 / 20px 20px no-repeat;
@@ -150,7 +150,6 @@ ul li{
 }
 .list-5 li{
 	background: url("../img/tailgrids/core_components/list_5.svg")0 8px no-repeat;
-	min-height: 8px;
 	padding-left: 30px;
 	padding-top: 3px;
 }
