@@ -1,0 +1,182 @@
+/* reset styles */
+@import url("reset.css");
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter: 400,500,600,700&display=swap");
+
+/* main styles */
+
+/* VENCE */
+.header__container{
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/* Header VENCE)*/
+.header {
+	padding: 330px 0 100px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.66;
+	color: #F8F9FA;
+	background: url("../img/vence/background.jpg") center / cover no-repeat,  rgb(33, 37, 41) ; 
+}
+.header__content {
+	max-width: 610px;
+}
+.header__content span {
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.header__content p{
+	max-width: 355px;
+}
+.header__content h1{
+	margin-bottom: 15px;
+	max-width: 605px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+}
+
+/* Main (TailGrids-Example Templates - Homepage) */
+.tailgrids{
+	padding: 145px 0;
+	background: url("../img/tailgrids/example_templates/1.png") 69.69%  no-repeat, #F4F7FF
+	linear-gradient(115deg, rgba(48,86,211,0) 60.63%, rgba(48,86,211,0.0844712885154062) 60.63%, rgba(48,86,211,0) 65.63%, rgba(48,86,211,0.0844712885154062) 65%);
+}
+.tailgrids__container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+}
+.tailgrids__content {
+	max-width: 585px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+}
+.tailgrids__content span {
+	margin-bottom: 13px;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 1.33; /* 24/18 */
+	color: #3056D3;
+}
+.tailgrids__content h2{
+	margin-bottom: 15px;
+	max-width: 470px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25; /* 45/36 */
+	color: #212B36;
+}
+.tailgrids__content p{
+	margin-bottom: 35px;
+	max-width: 570px;
+	margin-bottom: 35px;
+	font-weight: 500;
+	color: #637381;
+}
+.button {
+	padding: 10px 30px;
+	display: inline-block;
+	color: #FFFFFF;
+	background-color: #3056D3;
+	border-radius: 30px;
+}
+.button:hover{
+	background-color: #3752a8;
+	transition: all 0.3s ease;
+}
+
+/* Footer (TailGrids - Core Components - List Styles) */
+
+.items {
+	padding: 50px 0 75px;
+}
+.items__container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1150px;
+}
+.items__content {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.06; /* 15/16 */
+	color: #637381;
+}
+.items__content h2 {
+	margin-bottom: 45px;
+	max-width: 265px;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.07; /* 28/26 */
+	color: #212B36;
+}
+ul {
+	margin-bottom: 60px;
+	max-width: 310px;
+}
+ul li{
+	margin-bottom: 20px;
+	min-height: 20px;
+}
+.list-1 li{
+	background: url("../img/tailgrids/core_components/list_1.svg") 0 4px no-repeat;
+	padding-left: 20px;
+	min-height: 8px;
+}
+.list-2 li{
+	background: url("../img/tailgrids/core_components/list_2.svg") 0 0 / 20px 20px no-repeat;
+	padding-left: 30px;
+}
+.list-3 li{
+	background: url("../img/tailgrids/core_components/list_3.svg") 0 0 / 20px 20px no-repeat;
+	padding-left: 30px;
+}
+.list-4 li{
+	background: url("../img/tailgrids/core_components/list_4.svg") 0 0 / 20px 20px no-repeat;
+	padding-left: 30px;
+}
+.list-5 li{
+	background: url("../img/tailgrids/core_components/list_5.svg")0 8px no-repeat;
+	min-height: 8px;
+	padding-left: 30px;
+	padding-top: 3px;
+}
+.list-6 li{
+	background: url("../img/tailgrids/core_components/list_6.svg") 0 0 / 17px 17px no-repeat;
+	padding-left: 30px;
+	min-height: 17px;
+	padding-top:1px;
+}
+.footer {
+	padding: 75px 0;
+	background: rgb(255,13,83);
+	background: linear-gradient(325deg, rgba(255,13,83,1) 0%, rgba(157,48,119,1) 20%, rgba(48,86,211,1) 53%, rgba(48,183,211,1) 65%, rgba(210,211,48,1) 78%);
+}
+.footer__container{
+	padding: 0 15px;
+	margin: 0 auto;
+	max-width: 1270px;
+}
+.practiсe{
+	text-align: justify;
+}
+.second{
+	height: 500px;
+	background: url("../img/tailgrids/example_templates/1.png") 0 / contain no-repeat, url("../img/tailgrids/example_templates/1.png") 100% / contain no-repeat, url("../img/practice/4.jpg") fixed;
+}
+.third{
+	margin-bottom: 50px;
+}
+.fourth{
+	width: 1000px;
+	height: 1000px;
+	background: url("../img/tailgrids/example_templates/1.png") center  / contain no-repeat;
+}
