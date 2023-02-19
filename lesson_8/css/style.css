@@ -132,7 +132,7 @@
 	line-height: 1.1; /* 15/16 */
 	color: #637381;
 }
-.items__content ul:not(:last-child) {
+.items__content > ul:not(:last-child) {
 	margin-bottom: 60px;
 }
 .items__content h2 {
