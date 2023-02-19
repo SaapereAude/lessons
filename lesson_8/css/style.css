@@ -59,7 +59,7 @@
 }
 .tailgrids__content {
 	margin-right: 17.7%;
-	padding: 65px 0;
+	vertical-align: middle;
 	max-width: 585px;
 	display: inline-block;
 	font-family: "Inter", sans-serif;
@@ -113,6 +113,7 @@
 }
 .tailgrids__container img{
 	max-width: 100%;
+	vertical-align: middle;
 }
 /*  (TailGrids - Core Components - List Styles) */
 
