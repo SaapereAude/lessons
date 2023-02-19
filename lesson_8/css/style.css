@@ -132,6 +132,9 @@
 	line-height: 1.1; /* 15/16 */
 	color: #637381;
 }
+.items__content ul:not(:last-child) {
+	margin-bottom: 60px;
+}
 .items__content h2 {
 	margin-bottom: 45px;
 	max-width: 265px;
@@ -141,7 +144,6 @@
 	color: #212B36;
 }
 ul {
-	margin-bottom: 60px;
 	max-width: 310px;
 }
 ul li{
