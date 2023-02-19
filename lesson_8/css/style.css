@@ -1,0 +1,213 @@
+/* reset styles */
+@import url("reset.css");
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap");
+
+/* main styles */
+
+/* VENCE */
+.header__container{
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/* Header VENCE*/
+.header {
+	padding: 330px 0 100px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.66;
+	color: #F8F9FA;
+	background: url("../img/vence/background.jpg") center / cover no-repeat,  rgb(33, 37, 41) ; 
+}
+.header__content {
+	max-width: 610px;
+}
+.header__content > *{
+	margin-bottom: 15px;
+}
+.header__content span {
+	display: inline-block;
+	max-width: 150px;
+}
+.header__content h1{
+	max-width: 605px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+}
+.header__content p{
+	max-width: 355px;
+}
+.header__content > *:last-child{
+	margin-bottom: 0;
+}
+
+/* Main (TailGrids-Example Templates - Homepage) */
+.tailgrids{
+	padding: 145px 0;
+	background: linear-gradient(115deg, rgba(0,0,0,0) 65%, rgba(48,86,211,0.0844712885154062) 65%, rgba(48,86,211,0) 99%), linear-gradient(115deg, rgba(0,0,0,0) 61%, rgba(48,86,211,0.0844712885154062) 61%, rgba(48,86,211,0) 99%), #F4F7FF;
+}
+.tailgrids__container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+	font-size: 0;
+}
+.tailgrids__content {
+	margin-right: 17.7%;
+	padding: 65px 0;
+	max-width: 585px;
+	display: inline-block;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+}
+.tailgrids__content span {
+	margin-bottom: 13px;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 1.33; /* 24/18 */
+	color: #3056D3;
+	max-width: 300px;
+}
+.tailgrids__content h2{
+	margin-bottom: 15px;
+	max-width: 470px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25; /* 45/36 */
+	color: #212B36;
+}
+.tailgrids__content p{
+	margin-bottom: 35px;
+	max-width: 570px;
+	font-weight: 500;
+	color: #637381;
+}
+.button {
+	margin-bottom: 15px;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #FFFFFF;
+	background-color: #3056D3;
+	border-radius: 30px;
+}
+.button:hover{
+	background-color: #3752a8;
+	transition: all 0.3s ease;
+}
+.button:active{
+	background-color: #041d70;
+	transition: all 0.3s ease;
+}
+.button:focus{
+	outline: 2px dashed #3056d3;
+}
+.tailgrids__content > *:last-child{
+	margin-bottom: 0;
+}
+.tailgrids__container img{
+	max-width: 100%;
+}
+/*  (TailGrids - Core Components - List Styles) */
+
+.items {
+	padding: 50px 0 75px;
+}
+.items__container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1150px;
+}
+.items__content {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.1; /* 15/16 */
+	color: #637381;
+}
+.items__content h2 {
+	margin-bottom: 45px;
+	max-width: 265px;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.07; /* 28/26 */
+	color: #212B36;
+}
+ul {
+	margin-bottom: 60px;
+	max-width: 310px;
+}
+ul li{
+	min-height: 20px;
+	margin-left: 30px;
+}
+ul li:not(:last-child){
+	margin-bottom: 20px;
+}
+ul li::before {
+	content: "";
+	margin-left: -30px;
+	padding-left: 30px;
+	display: inline-block;
+	width: 20px;
+	min-height: 20px;
+	vertical-align: bottom;
+}
+.list-1 li::before{
+	content: "";
+	background: url("../img/tailgrids/core_components/list_1.svg") 5px 5px no-repeat;
+	transition: all 0.3s ease;
+}
+.list-1 li:hover::before{
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+.list-2 li::before{
+	content: "";
+	background: url("../img/tailgrids/core_components/list_2.svg") 0 0 no-repeat;
+}
+.list-2 li:hover:nth-child(odd) {
+	color: #3056D3;
+	transform: scale(1.1);
+	transition: all 0.3s ease;
+}
+.list-2 li:hover:nth-child(even) {
+	color: red;
+	transform: scale(1.1);
+	transition: all 0.3s ease;
+}
+.list-3 li::before{
+	background: url("../img/tailgrids/core_components/list_3.svg") 0 0 no-repeat;
+}
+.list-3 li:nth-child(-n+3){
+	color: #1BBB81;
+}
+.list-4 li::before{
+	background: url("../img/tailgrids/core_components/list_4.svg") 0 0 no-repeat;
+}
+.list-4 li:nth-child(n+4){
+	color: red;
+}
+.list-5 li::before{
+	background: url("../img/tailgrids/core_components/list_5.svg") 0 6px no-repeat;
+	transition: all 0.3s ease;
+}
+.list-5 li:hover::before{
+	transform: translateX(5px);
+	transition: all 0.3s ease;
+}
+.list-6 li::before{
+	background: url("../img/tailgrids/core_components/list_6.svg") 0 0 / 20px 20px no-repeat;
+}
+.list-6 li:hover{
+	opacity: 0.8;
+	transition: all 0.3s ease;
+}
+
+
