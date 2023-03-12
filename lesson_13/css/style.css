@@ -133,7 +133,7 @@
 		transform: translateX(-50%) scale(1.2);
 	}
 	50%{
-		transform: translateX(-500%) scale(1.1);
+		transform: translateX(-700%) scale(1.1);
 	}
 }
 .sky__cloud_right {
@@ -149,7 +149,7 @@
 		transform: translateX(-50%) scale(1.7);
 	}
 	100%{
-		transform: translateX(-700%) scale(1.1);
+		transform: translateX(-900%) scale(1.1);
 	}
 }
 
