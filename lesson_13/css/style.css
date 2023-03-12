@@ -1,0 +1,412 @@
+@import url("reset.css");
+@import url("common.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.page-bus {
+	position: relative;
+}
+.page-bus__sky {
+	background: url("../img/road.webp") 0 0 / contain repeat-x;
+	height: 745px;
+	width: 1000%;
+	animation: scene 5s linear infinite;
+}
+@keyframes scene {
+	100%{
+		transform: translateX(-3000px);
+	}
+}
+.sky {
+}
+
+/* SUN */
+.sky__sun {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	display:inline-block;
+	border-radius:50%;
+	height:100px;
+	width:100px;
+	background:orange;
+	box-shadow: 0 0 10px rgb(255, 184, 52),
+					0 0 60px orange,
+					0 0 200px rgb(255, 255, 69),
+					inset 0 0 80px rgb(245, 245, 0);
+	filter: blur(3px);
+	animation: sun 5s linear infinite 0s forwards;
+}
+@keyframes sun {
+	0%{
+		opacity: 0.8;
+		transform: scale(1);
+	}
+	25%{
+		transform: scale(1.2);
+	}
+	50%{
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+}
+/* CLOUDS */
+.sky__cloud {
+	position: absolute;
+	width: 200px; 
+	height: 100px;
+	background: rgb(237, 245, 252);
+	opacity: 0.9;
+	border-radius: 100px;
+	background: linear-gradient(180deg, rgb(242, 249, 254) 5%, rgb(214, 240, 253) 100%);
+	filter: blur(5px);
+	animation: clouds 5s linear infinite 0s forwards;
+}
+@keyframes clouds {
+	0%{
+		transform: scale(1);
+	}
+	25%{
+		transform: scale(1.2);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+}
+
+.sky__cloud::before, .sky__cloud::after{
+	content: '';
+	position: absolute;
+	background: rgb(237, 245, 252);
+	z-index: 1;
+}
+.sky__cloud::before{
+	width: 70px; 
+	height: 70px;
+	top: -30px;
+	left: 30px;
+	border-radius: 100px;
+}
+.sky__cloud::after{
+	width: 100px;
+	height: 100px;
+	top: -47px;
+	right: 20px;
+	border-radius: 200px;
+}
+
+.sky__cloud_left {
+	top: 10%;
+	left: 10%;
+	z-index: 5;
+	animation: cloud-left 5s linear infinite 0s forwards;
+}
+@keyframes cloud-left {
+	0%{
+		transform: translateX(100%) scale(1);
+	}
+	25%{
+		transform: translateX(-50%) scale(1.5);
+	}
+	50%{
+		transform: translateX(-200%) scale(1.1);
+	}
+}
+.sky__cloud_middle {
+	left: 15%;
+	top: 20%;
+	animation: cloud-middle 5s linear infinite 1s forwards;
+}
+@keyframes cloud-middle {
+	0%{
+		transform: translateX(-10%) scale(1);
+	}
+	25%{
+		transform: translateX(-50%) scale(1.2);
+	}
+	50%{
+		transform: translateX(-500%) scale(1.1);
+	}
+}
+.sky__cloud_right {
+	left: 25%;
+	top: 15%;
+	animation: cloud-right 5s linear infinite 1s forwards;
+}
+@keyframes cloud-right {
+	0%{
+		transform: translateX(-10%) scale(1);
+	}
+	25%{
+		transform: translateX(-50%) scale(1.7);
+	}
+	100%{
+		transform: translateX(-700%) scale(1.1);
+	}
+}
+
+
+/* BUS */
+.sky__bus{
+	position: absolute;
+	width: 1000px;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transform: translate(0, 50%);
+	animation: bus 5s ease-out infinite;
+}
+@keyframes bus {
+	0%{
+		transform: translate(-100%, 50%);
+	}
+	50%{
+		transform: translate(100%, 50%);
+	}
+	100%{
+		transform: translate(500%, 50%);
+	}
+}
+.bus{
+	display: inline-block;
+	padding: 50px 0;
+}
+.bus__body {
+	height: 400px;
+	font-size: 0;
+}
+.body-bus {
+}
+.body-bus__base {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+/* BACK SIDE */
+.body-bus__backside {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 300px;
+	background-color: rgb(167, 61, 42);
+	border-radius: 100% 0% 55% 45% / 100% 100% 0% 0%;
+	overflow: hidden;
+}
+/* BACK SIDE WINDOW */
+.side-back__window-back {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	display: inline-block;
+	width: 50px;
+	height: 150px;
+	background-color: rgb(141, 141, 158);
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+}
+/* BACK SIDE LIGHTS */
+.side-back__stop-signal {
+	position: absolute;
+	bottom: 8%;
+	left: -25%;
+	width: 50px;
+	height: 20px;
+	background-color: rgba(255, 0, 0, 0.267);
+	border: 1px solid black;
+	border-radius: 2px;
+	transition: all 0.3s;
+}
+.side-back__stop-signal:hover{
+	background-color: rgb(255, 0, 0);
+}
+.side-back__turn-signal {
+	position: absolute;
+	bottom: 5%;
+	left: -25%;
+	width: 50px;
+	height: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: yellow;
+}
+.side-back__turn-signal:hover{
+	background-color: orange;
+}
+/* MIDDLE SIDE */
+.body-bus__middle {
+	position: relative;
+	display: inline-block;
+	width: 800px;
+	height: 300px;
+	background-color: rgb(167, 61, 42);
+	border-right: 5px solid black;
+	border-left: 5px solid black;
+}
+/* MIDDLE WINDOWS */
+.side-middle__window {
+	position: absolute;
+	display: inline-block;
+	width: 400px;
+	height: 150px;
+	background-color: rgb(141, 141, 158);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+.side-middle__window_left {
+	top: 5%;
+	left: 0;
+}
+.side-middle__window_middle {
+	top: 5%;
+	left: 391px;
+	border-left: 5px solid black;
+}
+.side-middle__window_right {
+	top: 5%;
+	right: 0;
+}
+/* SIDE MIDDLE WHEELS */
+.side-middle__left-wheel,
+.side-middle__right-wheel {
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	border: 10px dashed #ccc;
+	border-radius: 50%;
+	animation: wheels 3s linear infinite forwards;
+}
+@keyframes wheels {
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: translatey(4px) rotate(270deg);
+	}
+	55%{
+		transform: translatey(-4px) rotate(360deg);
+	}
+	100%{
+		transform: translatey(4px) rotate(600deg);
+	}
+}
+.side-middle__left-wheel{
+	position: absolute;
+	bottom: -70px;
+	right: 20px;
+}
+.side-middle__right-wheel {
+	position: absolute;
+	bottom: -70px;
+	left: 115px;
+}
+
+.side-middle__left-wheel::before,
+.side-middle__right-wheel::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 15px solid #ccc;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+/* FRONT SIDE */
+.body-bus__frontside {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 300px;
+	background-color: rgb(167, 61, 42);
+	border-radius:	0% 100% 100% 0% / 0% 68% 32% 100%;
+	overflow: hidden;
+}
+/* FRONT SIDE WINDOW */
+.side-front__windshield {
+	width: 100px;
+	height: 180px;
+	background-color: rgb(141, 141, 158);
+	border-bottom: 5px solid black;
+}
+/* FONT SIDE LIGHTS */
+.side-front__turn-signal {
+	position: absolute;
+	bottom: 7%;
+	left: 50%;
+	width: 50px;
+	height: 10px;
+	background-color: yellow;
+	border: 1px solid black;
+	transition: all 0.3s;
+}
+.side-front__turn-signal:hover{
+	background-color: orange;
+}
+.side-front__lights-front {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	width: 50px;
+	height: 20px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 29% 71% 100% 0% / 0% 58% 42% 100%;
+	transition: all 0.3s;
+}
+.side-front__lights-front:hover {
+	background-color: rgb(112, 172, 206);
+}
+.footer{
+	padding: 100px 0 ;
+}
+h1{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.footer__container{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.footer__block{
+	width: 100px;
+	margin: 0 auto;
+}
+.button{
+	text-align: center;
+	display: inline-block;
+	padding: 5px 15px;
+	background-color: #FF0303;
+	border-radius: 15px;
+	color: #2E3840;
+	box-shadow: 0 5px 10px #121212;
+	position: relative;
+}
+.button::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #FF0303;
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	transition: 0.25s all ease-in-out;
+}
+.button:hover::after{
+	transform: scale(1.8);
+	opacity: 0;
+}
