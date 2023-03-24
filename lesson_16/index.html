@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson №16 - Forms</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__tailgrids tailgrids">
+				<div class="tailgrids__container">
+					<form action="https://jsonplaceholder.typicode.com/posts" class="tailgrids__form form-tailgrids" method="POST">
+						<div class="form-tailgrids__billing">
+							<h3 class="form-tailgrids__title title-tailgrids">Billing Details</h3>
+							<div class="form-tailgrids__line">
+								<input class="form-tailgrids__item input-block" type="text" name="firstname" placeholder="First name*" required autocomplete="off">
+								<input class="form-tailgrids__item input-block" type="text" name="lastname" placeholder="Last name*" required autocomplete="off">
+							</div>
+							<div class="form-tailgrids__line">
+								<input class="form-tailgrids__item input-block" type="text" name="address-1" placeholder="Address*" required autocomplete="off">
+								<input class="form-tailgrids__item input-block" type="text" name="address-2" placeholder="Address line 2" autocomplete="off">
+							</div>
+							<div class="form-tailgrids__line">
+								<select class="form-tailgrids__item select-block" name="country" id="country" required>
+									<option value="" disabled selected>Country*</option>
+									<option value="ukraine">Ukraine</option>
+									<option value="usa">USA</option>
+									<option value="poland">Poland</option>
+									<option value="france">France</option>
+									<option value="germany">Germany</option>
+								</select>
+								<input class="form-tailgrids__item input-block" type="text" name="city" placeholder="City/Town*" required autocomplete="off">
+							</div>
+							<div class="form-tailgrids__line">
+								<input class="form-tailgrids__item input-block" type="text" name="zipcode" placeholder="Postcode / ZIP*" minlength="5" maxlength="10" required autocomplete="off">
+								<input class="form-tailgrids__item input-block" type="tel" name="phone" placeholder="Phone*" maxlength="15" required autocomplete="off">
+							</div>
+							<div class="form-tailgrids__line">
+								<input class="form-tailgrids__item input-block" type="text" name="zipcode" placeholder="Postcode / ZIP*" minlength="5" maxlength="10" required autocomplete="off">
+								<input class="form-tailgrids__item input-block" type="tel" name="phone" placeholder="Phone*" maxlength="15" required autocomplete="off">
+							</div>
+							<div class="form-tailgrids__line">
+								<textarea class="message-block" name="additional-info" id="message-block" placeholder="Additional information"></textarea>
+							</div>
+							<div class="form-tailgrids__line">
+								<div class="form-tailgrids__check tailgrids-checkbox">
+									<input class="tailgrids-checkbox__item" id="tailgrids-checkbox-01" type="checkbox" name="create-new-account" value="yes" checked>
+									<label class="tailgrids-checkbox__label" for="tailgrids-checkbox-01">Create Account</label>
+								</div>
+								<div class="form-tailgrids__check tailgrids-checkbox">
+									<input class="tailgrids-checkbox__item" id="tailgrids-checkbox-02" type="checkbox" name="shipment-to-different-address" value="yes">
+									<label class="tailgrids-checkbox__label" for="tailgrids-checkbox-02">Ship to a different address?</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-tailgrids__discount">
+							<h3 class="form-tailgrids__subtitle title-tailgrids">Apply Coupon to get discount!</h3>
+							<div class="form-tailgrids__line">
+								<input class="form-tailgrids__item input-block" type="text" name="coupone-code" placeholder="Coupon code" autocomplete="off">
+								<button class="form-tailgrids__button btn" type="submit">Apply Code</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="page__crisp crisp">
+				<div class="crisp__container">
+					<form action="https://jsonplaceholder.typicode.com/posts" class="crisp__login login-crisp" method="POST">
+						<h3 class="login-crisp__title title-crisp">Shipping Address</h3>
+						<div class="login-crisp__line">
+							<label class="login-crisp__label label-required" for="m01">Email Address</label>
+							<input class="login-crisp__item item-crisp" type="email" name="email" id="m01" placeholder="roni_cost@example.com" required>
+						</div>
+						<div class="login-crisp__line">
+							<label class="login-crisp__label" for="m02">Password</label>
+							<input class="login-crisp__item item-crisp"  type="password" name="passwords" id="m02" placeholder="******************">
+						</div>
+						<div class="login-crisp__line">
+							<label class="login-crisp__label" for="m03">Zip/Postal Code</label>
+							<input class="login-crisp__item item-crisp"  type="text" name="zip-code" id="m03">
+						</div>
+						<div class="login-crisp__tip">
+							<p>You already have an account with us. Sign in or continue as guest.</p>
+						</div>
+						<div class="login-crisp__actions">
+							<button class="login-crisp__button button-crisp" type="submit">login</button>
+							<a href="#" class="login-crisp__link">Forgot Your Password?</a>
+						</div>
+					</form>
+					<form action="https://jsonplaceholder.typicode.com/posts" class="crisp__shipment shipment-crisp" method="POST">
+						<div class="shipment-crisp__line">
+							<div class="shipment-crisp__column-item">
+								<label class="shipment-crisp__label label-required" for="m04">First Name</label>
+								<input class="shipment-crisp__item item-crisp" type="email" name="first-name" id="m04" required>
+							</div>
+						</div>
+						<div class="shipment-crisp__line">
+							<div class="shipment-crisp__column-item">
+								<label class="shipment-crisp__label label-required" for="m05">Last Name</label>
+								<input class="shipment-crisp__item item-crisp" type="email" name="e-mail" id="m05" required>
+							</div>
+						</div>
+						<div class="shipment-crisp__line">
+							<div class="shipment-crisp__column-item">
+								<label class="shipment-crisp__label" for="m06">Company</label>
+								<input class="shipment-crisp__item item-crisp" type="email" name="company" id="m06">
+							</div>
+						</div>
+						<div class="shipment-crisp__line">
+							<div class="shipment-crisp__column-item">
+								<label class="shipment-crisp__label label-required" for="m07">Street Address</label>
+								<div class="shipment-crisp__inputs">
+									<input class="shipment-crisp__item shipment-crisp__item_rows item-crisp" type="text" name="street" id="m07" required>
+									<input class="shipment-crisp__item shipment-crisp__item_rows item-crisp" type="text" name="street" id="m071">
+									<input class="shipment-crisp__item shipment-crisp__item_rows item-crisp" type="text" name="street" id="m072">
+								</div>
+							</div>
+						</div>
+						<div class="shipment-crisp__line">
+							<div class="shipment-crisp__column-item">
+								<label class="shipment-crisp__label label-required" for="m08">Country</label>
+								<input class="shipment-crisp__item item-crisp" type="email" name="country" id="m08" required>
+							</div>
+						</div>
+						<div class="shipment-crisp__line">
+							<div class="shipment-crisp__column-item">
+								<label class="shipment-crisp__label label-required" for="m09">State/Province</label>
+									<select class="shipment-crisp__item item-crisp item-crisp_select" name="state" id="m09" required>
+										<option value="" disabled selected>Please select a region, state or province</option>
+										<option value="ukraine">Ukraine</option>
+										<option value="usa">USA</option>
+										<option value="poland">Poland</option>
+										<option value="france">France</option>
+										<option value="germany">Germany</option>
+									</select>
+							</div>
+						</div>
+						<div class="shipment-crisp__line shipping-methods">
+							<h3 class="shipping-methods__title title-crisp">Shipping Methods</h3>
+							<div class="shipping-methods__box">
+								<div class="shipping-methods__row">
+									<div class="shipping-methods__price">
+										<input class="shipping-methods__radio radio-button" type="radio" name="price" id="m10" checked >
+										<label class="shipping-methods__label radio-label" for="m10">$5.00</label>
+									</div>
+									<div class="shipping-methods__description">
+										<span>Fixed</span>
+										<span>Flat Rate</span>
+									</div>
+								</div>
+								<div class="shipping-methods__row">
+									<div class="shipping-methods__price">
+										<input class="shipping-methods__radio radio-button" type="radio" name="price" id="m11">
+										<label class="shipping-methods__label radio-label" for="m11">$10.00</label>
+									</div>
+									<div class="shipping-methods__description">
+										<span>Table Rate</span>
+										<span>Best Way</span>
+									</div>
+								</div>
+							</div>
+							<div class="shipping-methods__actions">
+								<button class="shipping-methods__button button-crisp" type="submit">next</button>
+								<a href="#" class="shipping-methods__button button-crisp button-crisp_transparent">back</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
