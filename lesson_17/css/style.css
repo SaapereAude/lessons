@@ -560,7 +560,15 @@ body{
 .login-crisp__link:hover{
 	color: #000000;
 }
+.shipment-crisp__top-side{
 
+}
+.shipment-crisp__top-side:not(:last-child){
+	margin-bottom: 46px;
+}
+.shipment-crisp__bottom-side{
+
+}
 
 .crisp__shipment {
 	margin: 0 auto;
@@ -649,6 +657,9 @@ body{
 	}
 }
 @media (max-width: 479.98px){
+	.shipment-crisp__top-side:not(:last-child){
+		margin-bottom: 30px;
+	}
 	.login-crisp__button{
 		margin: 0 0 20px 0;
 	}
