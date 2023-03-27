@@ -216,8 +216,9 @@
 							<button class="login-crisp__button button-crisp" type="submit">login</button>
 							<a href="#" class="login-crisp__link">Forgot Your Password?</a>
 						</div>
-					
-						<div class="shipment-crisp">
+					</form>
+					<form action="https://jsonplaceholder.typicode.com/posts" class="crisp__shipment shipment-crisp" method="POST">	
+						<div class="shipment-crisp__top-side">
 							<div class="shipment-crisp__line">
 								<label class="shipment-crisp__label label-required" for="m04">First Name</label>
 								<input class="shipment-crisp__item item-crisp" type="text" name="first-name" id="m04" required>
@@ -258,8 +259,7 @@
 									</select>
 							</div>
 						</div>
-					</form>	
-					<form action="https://jsonplaceholder.typicode.com/posts" class="crisp__shipment shipping-methods" method="POST">	
+						<div class="shipment-crisp__bottom-side shipping-methods">							
 							<h3 class="shipping-methods__title title-crisp">Shipping Methods</h3>
 							<div class="shipping-methods__box">
 								<div class="shipping-methods__row">
@@ -291,6 +291,7 @@
 								<button class="shipping-methods__button button-crisp" type="submit">next</button>
 								<a href="#" class="shipping-methods__button button-crisp button-crisp_transparent">back</a>
 							</div>
+						</div>					
 					</form>
 				</div>
 			</div>
