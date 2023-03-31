@@ -1,0 +1,36 @@
+.title {
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1.60; /* 40/25 */
+	color: #212529;
+}
+.title_white {
+	max-width: 370px;
+	color: #F8F9FA;
+	text-align: center;
+}
+.label{
+	/* text-align: center; */
+	max-width: 110px;
+	font-weight: 300;
+	line-height: 1.66; /* 20/12 */
+	color: #E5E5E5;
+}
+.pagination{
+	font-weight: 300;
+	line-height: 1.66; /* 20/12 */
+	letter-spacing: 0.2em;
+	color: #E5E5E5;
+}
+.subtitle {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.56; /* 25/16 */
+	color: #212529;
+}
+.text{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.66; /* 20/12 */
+	color: #6C757D;
+}
