@@ -739,6 +739,9 @@ body{
 	color: rgba(73, 80, 87, 0.5);
 	transition: all 0.3s;
 }
+.pagination-topics__link.active{
+	color: #212529;
+}
 @media (any-hover: hover){
 	.pagination-topics__item:hover .pagination-topics__link{
 		color: #212529;
