@@ -1,0 +1,229 @@
+$mainColor: #000000;
+$secondaryColor: #828282;
+$difColor: #EB5757;
+$grayColor: #C4C4C4;
+
+//Titles
+.title{
+	font-size: 56px;
+	font-weight: 500;
+	line-height: math.div(72, 56);
+	text-transform: uppercase;
+	position: relative;
+	&_decor{
+		&::before{
+			content:'';
+			position: absolute;
+			top: -23px;
+			right: 0;
+			width: 94.728682%; /* 611/645 */
+			height: 2px;
+			background-color: $mainColor;
+			@media (max-width: 350px){
+				display: none;
+			}
+		}
+		&::after{
+			content:'';
+			position: absolute;
+			top: -22px;
+			right: 0;
+			height: 100px;
+			width: 2px;
+			background-color: $mainColor;
+			@media (max-width: 991.98px){
+				height: 75px;
+			}
+			@media (max-width: 670px){
+				height: 60px;
+			}
+			@media (max-width: 350px){
+				display: none;
+			}
+		}
+	}
+	@media (max-width: 991.98px){
+		font-size: 48px;
+		line-height: math.div(56, 48);
+	}
+	@media (max-width: 670px){
+		font-size: 36px;
+		line-height: math.div(38, 36);
+	}
+	@media (max-width: 450px){
+		text-align: center;
+	}
+}
+.subtitle{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: math.div(68, 24);
+	@media (max-width: 991.98px){
+		line-height: math.div(32, 24);
+	}
+}
+.description{
+	font-family: Roboto;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: math.div(37, 25);
+	letter-spacing: 0.01em;
+	@media (max-width: 991.98px){
+		font-size: 22px;
+		font-weight: 300;
+		line-height: math.div(32, 24);
+	}
+}
+// Checkbox
+.box-check {
+	position: relative;
+	// .box-check__checkbox
+	&__checkbox {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:focus-visible + .box-check__label{
+			outline: 1px solid $mainColor;
+		}
+		&:checked + .box-check__label::before{
+			background: $mainColor url('../img/icons/check.svg') center no-repeat;
+		}
+	}
+	// .box-check__label
+	&__label {
+		display: inline-flex;
+		align-items: center;
+		gap: 9px;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: math.div(21, 14);
+		color: #3F3F3F;
+		cursor: pointer;
+		text-transform: uppercase;
+		&::before{
+			content: "";
+			flex: 0 0 10px;
+			width: 10px;
+			height: 10px;
+			background-color: transparent;
+			border: 1px solid $secondaryColor;
+		}
+	}
+}
+
+
+// Product cards
+.category{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: math.div(17.78, 12);
+	color: $secondaryColor;
+	text-transform: uppercase;
+	@media (max-width: 767.98px){
+		font-size: 15px;
+		line-height: math.div(20, 15);
+	}
+}
+.product-name{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: math.div(26.68, 18);
+}
+
+.price {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: math.div(32.6, 22);
+	text-transform: uppercase;
+	// .price_discount
+	&_discount {
+		color: $difColor;
+	}
+	// .price_old
+	&_old {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: math.div(20.57, 14);
+		text-decoration: line-through;
+		color: $secondaryColor;
+	}
+}
+
+// Sticker
+.sticker{
+	padding: 4px 5px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: math.div(12, 14);
+	text-align: center;
+	color: #FFFFFF;
+	background-color: $mainColor;
+}
+
+// buttons
+.button {
+	display: inline-block;
+	border: 2px solid $mainColor;
+	padding: 13px 43px;
+	letter-spacing: 0.5px;
+	transition: all 0.3s;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover{
+		background-color: $mainColor;
+		color: #ffffff;
+	}
+	// .button_gray
+	&_gray {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: math.div(21, 14);
+		letter-spacing: 0.5px;
+		text-align: center;
+		padding: 12px 34px 13px;
+		color: $secondaryColor;
+		border: 2px solid $grayColor;
+		transition: all 0.3s;
+		&:hover{
+			background-color: transparent;
+			color: $mainColor;
+			border: 2px solid $secondaryColor ;
+		}
+		&:active{
+			transform: scale(0.99);
+		}
+	}
+}
+
+// Slider controls
+.controls {
+	display: flex;
+	gap: 4px;
+	// .controls__button
+	&__button {
+		padding: 12px 15px;
+		width: 40px;
+		height: 40px;
+		border: 2px solid $grayColor;
+		background: url("../img/icons/arrow-left.svg") 50% 50% no-repeat;
+		transition: all 0.3s;
+		// .controls__button_right
+		&_right {
+			transform: rotate(180deg);
+		}
+		&:hover{
+			background-position: 44% 50%;
+			border: 2px solid $secondaryColor ;
+		}
+	}
+}
+
+
